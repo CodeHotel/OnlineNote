@@ -1,0 +1,10 @@
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\bin\Debug\ClearTest1.exe.config
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\bin\Debug\ClearTest1.exe
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\bin\Debug\ClearTest1.pdb
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.csprojAssemblyReference.cache
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.Properties.Resources.resources
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.csproj.GenerateResource.cache
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.csproj.CoreCompileInputs.cache
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.exe
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.pdb
+C:\Users\mh7cp\source\repos\ClearTest1\ClearTest1\obj\Debug\ClearTest1.Form1.resources
