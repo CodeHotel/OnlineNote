@@ -32,6 +32,7 @@ namespace ClearTest1
             byte xType = 0;
             byte yType = 0;
             mouseDown = true;
+            this.Capture = true;
             switch (e.X-this.textBox1.Location.X)
             {
                 case int n when (n < 0 - resizeBoxHalfSize): xType = 0; break;
@@ -75,16 +76,19 @@ namespace ClearTest1
             else { clickMode = ClickType.None; }
             lastLocation = this.textBox1.Location;
             txtDeviation = new Point(e.X - this.textBox1.Location.X, e.Y - this.textBox1.Location.Y);
+            this.Capture = false;
         }
 
         private void txt1_MouseMove(object sender, MouseEventArgs e)
         {
+            this.Capture = true;
             if (mouseDown)
             {
 
                 switch (clickMode)
                 {
                     case ClickType.None:
+                        this.Capture = false;
                         return;
                     case ClickType.txtMove:
                         this.textBox1.Location = new System.Drawing.Point(e.X - txtDeviation.X, e.Y - txtDeviation.Y);
@@ -131,10 +135,12 @@ namespace ClearTest1
                         break;
                 }
             }
+
         }
         private void txt1_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+            this.Capture = false;
             clickMode = ClickType.None;
         }
     }

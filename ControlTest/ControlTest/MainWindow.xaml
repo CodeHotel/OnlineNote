@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ControlTest"
         xmlns:custom="clr-namespace:ControlTest.CustomControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1200" Width="1600">
     <Grid>
         <custom:AdTXT/>
 

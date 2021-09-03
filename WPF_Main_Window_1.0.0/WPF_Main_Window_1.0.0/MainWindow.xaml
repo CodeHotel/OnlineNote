@@ -14,7 +14,7 @@
     </Window.Background>
     <Grid x:Name="a1" HorizontalAlignment="Left" Height="131" Margin="265,75,0,0" VerticalAlignment="Top" Width="322">
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="44" Margin="-108,304,0,-217" VerticalAlignment="Top" Width="128" Click="button_Click"/>
-        <custom:Adjustable_Txt/>
+        
 
     </Grid>
 
