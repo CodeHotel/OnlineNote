@@ -10,11 +10,11 @@ using System.Windows.Shapes;
 
 namespace ControlTest.CustomControls
 {
-    class AdTXT:Control
+    public class AdTXT:Control
     {
         
         public enum HTarget { NE, SW, NW, SE, UP, DOWN, RIGHT, LEFT, LINE, NONE }
-        private HTarget ClickMode = HTarget.NONE;
+        public HTarget ClickMode = HTarget.NONE;
         public bool selected;
 
 
@@ -236,7 +236,7 @@ namespace ControlTest.CustomControls
         #endregion
 
         #region 크기조정 이벤트처리함수
-        private void Movement_Regulator(object sender, MouseEventArgs e)
+        public void Movement_Regulator(object sender, MouseEventArgs e)
         {
             Thickness newMargin;
             double iw, ih;

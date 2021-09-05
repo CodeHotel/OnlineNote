@@ -12,12 +12,13 @@
     <Window.Background>
         <SolidColorBrush Opacity="0.7" Color="White"/>
     </Window.Background>
-    <StackPanel x:Name="a1">
+    <Grid x:Name="a1">
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="44" Margin="0,0,0,0" VerticalAlignment="Top" Width="128" Click="button_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" Height="100" MouseUp="outer_mouse_up" MouseMove="outer_mouse_move"/>
 
 
 
 
 
-    </StackPanel>
+    </Grid>
 </Window>

@@ -21,6 +21,8 @@ namespace ControlTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        public AdTXT[] boxarr = new AdTXT[100];
+        public int boxindex = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -29,7 +31,31 @@ namespace ControlTest
         {
             AdTXT newtext = new AdTXT();
             a1.Children.Add(newtext);
+            boxarr[boxindex] = newtext;
+            boxindex++;
         }
+
+
+        private void outer_mouse_up(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            for (int i = 0; i < boxindex; i++)
+            {
+                boxarr[i].ClickMode = AdTXT.HTarget.NONE;
+            }
+            */
+        }
+
+        private void outer_mouse_move(object sender, MouseEventArgs e)
+        {
+            /*for (int i = 0; i < boxindex; i++)
+            {
+                boxarr[i].Movement_Regulator(sender, e);
+            }
+            */
+        }
+
+
     }
 
 }
