@@ -7,7 +7,7 @@
                 <ControlTemplate TargetType="local:AdTXT">
                     <Grid>
                         <Line x:Name="a01" VerticalAlignment="Center" HorizontalAlignment="Center" X1="0" X2="-75"/>
-                        <TextBox x:Name="InnerBox" BorderThickness="0"  HorizontalAlignment="Left" Width="200" Height="200" Margin="50,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" />
+                        <TextBox x:Name="InnerBox" BorderThickness="0"  HorizontalAlignment="Left" Width="200" Height="200" Margin="50,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
                         <Line x:Name="LUp" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="250" Y2="50"/>
                         <Line x:Name="LLeft" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="50" Y2="250"/>
                         <Line x:Name="LRight" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="250" Y1="50" X2="250" Y2="250"/>

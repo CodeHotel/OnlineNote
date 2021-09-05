@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using ControlTest.CustomControls;
+//
 namespace ControlTest
 {
     /// <summary>
@@ -24,6 +25,11 @@ namespace ControlTest
         {
             InitializeComponent();
         }
-
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            AdTXT newtext = new AdTXT();
+            a1.Children.Add(newtext);
+        }
     }
+
 }
