@@ -52,6 +52,10 @@ namespace ControlTest.CustomControls
             return true;
         }
         #region mousehover 이벤트처리함수
+        private void Individual_Leave(object sender, MouseEventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
         private void Leave_Regulator(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed && ClickMode != HTarget.NONE)
@@ -164,7 +168,6 @@ namespace ControlTest.CustomControls
         }
         private void UPMouseDown(object sender, MouseEventArgs e)
         {
-            Mouse.Capture(this, CaptureMode.SubTree);
             selected = true;
             ClickMode = HTarget.UP;
             cpx = e.GetPosition(null).X;
@@ -238,6 +241,10 @@ namespace ControlTest.CustomControls
         #region 크기조정 이벤트처리함수
         public void Movement_Regulator(object sender, MouseEventArgs e)
         {
+            if (e.LeftButton != MouseButtonState.Pressed)
+            {
+                return;
+            }
             Thickness newMargin;
             double iw, ih;
             switch (ClickMode)
@@ -318,9 +325,18 @@ namespace ControlTest.CustomControls
         }
         #endregion
 
-        private void TxtMouseUp(object sender, MouseEventArgs e)
+        public void TxtMouseUp(object sender, MouseEventArgs e)
         {
+            if (ClickMode == HTarget.UP)
+            {
+                Movement_Regulator(sender, e);
+                Cursor = Cursors.Arrow;
+                Cursor = Cursors.SizeNS;
+               // Mouse.Capture(null);
+            }
             ClickMode = HTarget.NONE;
+            
+            //Cursor = Cursors.Arrow;
             //Mouse.Capture(null);
         }
 
@@ -357,7 +373,7 @@ namespace ControlTest.CustomControls
             if (LUp != null)
             {
                 (LUp as Line).MouseEnter += Line_MouseEnter;
-                //(LUp as Line).MouseLeave += Square_MouseLeave;
+                //(LUp as Line).MouseLeave += Individual_Leave;
                 (LUp as Line).MouseDown += LineMouseDown;
                 (LUp as Line).MouseMove += Movement_Regulator;
                 //(LUp as Line).MouseUp += TxtMouseUp;
@@ -365,7 +381,7 @@ namespace ControlTest.CustomControls
             if (LDown != null)
             {
                 (LDown as Line).MouseEnter += Line_MouseEnter;
-                //(LDown as Line).MouseLeave += Square_MouseLeave;
+                //(LDown as Line).MouseLeave += Individual_Leave;
                 (LDown as Line).MouseDown += LineMouseDown;
                 (LDown as Line).MouseMove += Movement_Regulator;
                 //(LDown as Line).MouseUp += TxtMouseUp;
@@ -373,7 +389,7 @@ namespace ControlTest.CustomControls
             if (LRight != null)
             {
                 (LRight as Line).MouseEnter += Line_MouseEnter;
-                //(LRight as Line).MouseLeave += Square_MouseLeave;
+                //(LRight as Line).MouseLeave += Individual_Leave;
                 (LRight as Line).MouseDown += LineMouseDown;
                 (LRight as Line).MouseMove += Movement_Regulator;
                 //(LRight as Line).MouseUp += TxtMouseUp;
@@ -381,7 +397,7 @@ namespace ControlTest.CustomControls
             if (LLeft != null)
             {
                 (LLeft as Line).MouseEnter += Line_MouseEnter;
-                //(LLeft as Line).MouseLeave += Square_MouseLeave;
+                //(LLeft as Line).MouseLeave += Individual_Leave;
                 (LLeft as Line).MouseDown += LineMouseDown;
                 (LLeft as Line).MouseMove += Movement_Regulator;
                 //(LLeft as Line).MouseUp += TxtMouseUp;
@@ -390,7 +406,7 @@ namespace ControlTest.CustomControls
             if (NW != null)
             {
                 (NW as Rectangle).MouseEnter += Square_MouseEnter_NWSE;
-                //(NW as Rectangle).MouseLeave += Square_MouseLeave;
+                //(NW as Rectangle).MouseLeave += Individual_Leave;
                 (NW as Rectangle).MouseDown += NWMouseDown;
                 (NW as Rectangle).MouseMove += Movement_Regulator;
                 //(NW as Rectangle).MouseUp += TxtMouseUp;
@@ -398,7 +414,7 @@ namespace ControlTest.CustomControls
             if (SE != null)
             {
                 (SE as Rectangle).MouseEnter += Square_MouseEnter_NWSE;
-                //(SE as Rectangle).MouseLeave += Square_MouseLeave;
+                //(SE as Rectangle).MouseLeave += Individual_Leave;
                 (SE as Rectangle).MouseDown += SEMouseDown;
                 (SE as Rectangle).MouseMove += Movement_Regulator;
                 //(SE as Rectangle).MouseUp += TxtMouseUp;
@@ -406,7 +422,7 @@ namespace ControlTest.CustomControls
             if (UP != null)
             {
                 (UP as Rectangle).MouseEnter += Square_MouseEnter_NS;
-                //(UP as Rectangle).MouseLeave += Square_MouseLeave;
+                //(UP as Rectangle).MouseLeave += Individual_Leave;
                 (UP as Rectangle).MouseDown += UPMouseDown;
                 (UP as Rectangle).MouseMove += Movement_Regulator;
                 //(UP as Rectangle).MouseUp += TxtMouseUp;
@@ -414,7 +430,7 @@ namespace ControlTest.CustomControls
             if (DOWN != null)
             {
                 (DOWN as Rectangle).MouseEnter += Square_MouseEnter_NS;
-                //(DOWN as Rectangle).MouseLeave += Square_MouseLeave;
+                //(DOWN as Rectangle).MouseLeave += Individual_Leave;
                 (DOWN as Rectangle).MouseDown += DOWNMouseDown;
                 (DOWN as Rectangle).MouseMove += Movement_Regulator;
                 //(DOWN as Rectangle).MouseUp += TxtMouseUp;
@@ -422,7 +438,7 @@ namespace ControlTest.CustomControls
             if (LEFT != null)
             {
                 (LEFT as Rectangle).MouseEnter += Square_MouseEnter_WE;
-                //(LEFT as Rectangle).MouseLeave += Square_MouseLeave;
+                //(LEFT as Rectangle).MouseLeave += Individual_Leave;
                 (LEFT as Rectangle).MouseDown += LEFTMouseDown;
                 (LEFT as Rectangle).MouseMove += Movement_Regulator;
                 //(LEFT as Rectangle).MouseUp += TxtMouseUp;
@@ -430,7 +446,7 @@ namespace ControlTest.CustomControls
             if (RIGHT != null)
             {
                 (RIGHT as Rectangle).MouseEnter += Square_MouseEnter_WE;
-                //(RIGHT as Rectangle).MouseLeave += Square_MouseLeave;
+                //(RIGHT as Rectangle).MouseLeave += Individual_Leave;
                 (RIGHT as Rectangle).MouseDown += RIGHTMouseDown;
                 (RIGHT as Rectangle).MouseMove += Movement_Regulator;
                 //(RIGHT as Rectangle).MouseUp += TxtMouseUp;
@@ -438,7 +454,7 @@ namespace ControlTest.CustomControls
             if (NE != null)
             {
                 (NE as Rectangle).MouseEnter += Square_MouseEnter_NESW;
-                //(NE as Rectangle).MouseLeave += Square_MouseLeave;
+                //(NE as Rectangle).MouseLeave += Individual_Leave;
                 (NE as Rectangle).MouseDown += NEMouseDown;
                 (NE as Rectangle).MouseMove += Movement_Regulator;
                 //(NE as Rectangle).MouseUp += TxtMouseUp;
@@ -446,7 +462,7 @@ namespace ControlTest.CustomControls
             if (SW != null)
             {
                 (SW as Rectangle).MouseEnter += Square_MouseEnter_NESW;
-                //(SW as Rectangle).MouseLeave += Square_MouseLeave;
+                //(SW as Rectangle).MouseLeave += Individual_Leave;
                 (SW as Rectangle).MouseDown += SWMouseDown;
                 (SW as Rectangle).MouseMove += Movement_Regulator;
                 //(SW as Rectangle).MouseUp += TxtMouseUp;

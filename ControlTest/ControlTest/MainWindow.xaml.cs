@@ -38,21 +38,21 @@ namespace ControlTest
 
         private void outer_mouse_up(object sender, MouseButtonEventArgs e)
         {
-            /*
+            
             for (int i = 0; i < boxindex; i++)
             {
-                boxarr[i].ClickMode = AdTXT.HTarget.NONE;
+                boxarr[i].TxtMouseUp(sender, e);
             }
-            */
+            
         }
 
         private void outer_mouse_move(object sender, MouseEventArgs e)
         {
-            /*for (int i = 0; i < boxindex; i++)
+            for (int i = 0; i < boxindex; i++)
             {
                 boxarr[i].Movement_Regulator(sender, e);
             }
-            */
+            
         }
 
 
