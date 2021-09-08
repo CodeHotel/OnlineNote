@@ -55,6 +55,18 @@ namespace ControlTest
             
         }
 
+        /*
+        private void outer_mouse_down(object sender, MouseEventArgs e)
+        {
+            
+            for (int i = 0; i < boxindex; i++)
+            {
+                boxarr[i].Selected = AdTXT.SelectMode.NON;
+                boxarr[i].CtrlsShown(false);
+            }
+        }
+        */
+
 
     }
 

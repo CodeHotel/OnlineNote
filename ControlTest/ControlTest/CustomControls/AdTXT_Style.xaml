@@ -7,11 +7,22 @@
                 <ControlTemplate TargetType="local:AdTXT">
                     <Grid>
                         <Line x:Name="a01" VerticalAlignment="Center" HorizontalAlignment="Center" X1="0" X2="-75"/>
-                        <TextBox x:Name="InnerBox" BorderThickness="0"  HorizontalAlignment="Left" Width="200" Height="200" Margin="50,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-                        <Line x:Name="LUp" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="250" Y2="50"/>
-                        <Line x:Name="LLeft" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="50" Y2="250"/>
-                        <Line x:Name="LRight" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="250" Y1="50" X2="250" Y2="250"/>
-                        <Line x:Name="LDown" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="250" X2="250" Y2="250"/>
+                        <TextBox x:Name="InnerBox" BorderThickness="0"  HorizontalAlignment="Left" Width="200" Height="200" Margin="50,50,0,0" TextWrapping="Wrap"
+                                   Text="TextBox" VerticalAlignment="Top" AcceptsReturn="False" Background="Transparent"/>
+                        
+                        <!--실제 윤곽선-->
+                        <Line x:Name="RN" StrokeThickness ="3" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="250" Y2="50"/>
+                        <Line x:Name="RW" StrokeThickness ="3" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="50" Y2="250"/>
+                        <Line x:Name="RE" StrokeThickness ="3" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="250" Y1="50" X2="250" Y2="250"/>
+                        <Line x:Name="RS" StrokeThickness ="3" Stroke="Gray" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="250" X2="250" Y2="250"/>
+
+                        <!--보조선(투명하고 두꺼운 선으로, '드래그 이동'클릭이 선이 얇아서 어렵기 때문에 판정을 관대하게 만들어줌.)-->
+                        <Line x:Name="LUp" StrokeThickness ="12" Stroke="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="250" Y2="50"/>
+                        <Line x:Name="LLeft" StrokeThickness ="12" Stroke="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="50" X2="50" Y2="250"/>
+                        <Line x:Name="LRight" StrokeThickness ="12" Stroke="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" X1="250" Y1="50" X2="250" Y2="250"/>
+                        <Line x:Name="LDown" StrokeThickness ="12" Stroke="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" X1="50" Y1="250" X2="250" Y2="250"/>
+                        
+                        <!--8방향 크기 조정 손잡이-->
                         <Rectangle x:Name="NW" Width="10" Height="10" Margin="45,45,0,0" Stroke ="Black" Fill="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
                         <Rectangle x:Name="UP" Width="10" Height="10" Margin="145,45,0,0" Stroke ="Black" Fill="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
                         <Rectangle x:Name="NE" Width="10" Height="10" Margin="245,45,0,0" Stroke ="Black" Fill="White" HorizontalAlignment="Left" VerticalAlignment="Top" />
