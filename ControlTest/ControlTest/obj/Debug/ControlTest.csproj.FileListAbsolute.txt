@@ -34,3 +34,7 @@ C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\obj\Debug\Control
 C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\obj\Debug\ControlTest.csproj.CoreCompileInputs.cache
 C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\obj\Debug\ControlTest.exe
 C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\obj\Debug\ControlTest.pdb
+C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\mh7cp\source\repos\OnlineNote\ControlTest\ControlTest\obj\Debug\ControlTest.csproj.CopyComplete
