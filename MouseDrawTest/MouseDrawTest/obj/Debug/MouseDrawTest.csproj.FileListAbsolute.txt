@@ -1,0 +1,14 @@
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.csprojAssemblyReference.cache
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MainWindow.baml
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MainWindow.g.cs
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\App.g.cs
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest_MarkupCompile.cache
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.g.resources
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.Properties.Resources.resources
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.csproj.GenerateResource.cache
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.csproj.CoreCompileInputs.cache
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\bin\Debug\MouseDrawTest.exe.config
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\bin\Debug\MouseDrawTest.exe
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\bin\Debug\MouseDrawTest.pdb
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.exe
+C:\Users\mh7cp\source\repos\OnlineNote\MouseDrawTest\MouseDrawTest\obj\Debug\MouseDrawTest.pdb
