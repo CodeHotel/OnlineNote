@@ -1,0 +1,15 @@
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\bin\Debug\ClickThru.exe.config
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\bin\Debug\ClickThru.exe
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\bin\Debug\ClickThru.pdb
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.csprojAssemblyReference.cache
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\MainWindow.g.cs
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\App.g.cs
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru_MarkupCompile.cache
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru_MarkupCompile.lref
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\MainWindow.baml
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.g.resources
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.Properties.Resources.resources
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.csproj.GenerateResource.cache
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.csproj.CoreCompileInputs.cache
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.exe
+C:\Users\mh7cp\source\repos\ClickThru\ClickThru\obj\Debug\ClickThru.pdb
